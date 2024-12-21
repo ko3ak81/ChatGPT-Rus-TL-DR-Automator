@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "ChatGPT Rus TL;DR Automator",
+    "version": "1.0",
+    "description": "Copies text from the current page, opens ChatGPT, and sends a prompt.",
+    "permissions": ["activeTab", "scripting", "tabs"],
+    "host_permissions": [
+      "https://chat.openai.com/*",
+      "https://chatgpt.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    }
+  }
